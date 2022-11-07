@@ -13,7 +13,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
   return (
     <div id="books__body">
       <main id="books__main">
-        <div className="books__container">
+        <div className="books__container3">
           <div className="row1">
             <div className="book__selected--top">
               <h2 className="cart__title">Cart</h2>
