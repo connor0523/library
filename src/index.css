@@ -35,6 +35,8 @@ img {
 
 p {
   line-height: 1.5;
+  /* font-weight: bold; */
+  font-size: 20px;
 }
 
 a {
@@ -264,15 +266,20 @@ header {
   padding: 56px 0;
 }
 
-.books__container {
-  padding: 24px 0;
-}
 
 .row {
   width: 100%;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.row1 {
+  width: 100vw;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 16px 24px;
 }
 
 .row__column {
@@ -465,24 +472,26 @@ FEATURES
 
 .book__title--link {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   width: 100%;
   color: #242424;
 }
 
-/* .book__price{
-} */
 
 .pricee{
-  width: 25%;
+  width: 100%;
   /* display: flex;
   justify-content: center; */
 }
 
 .book__ratings {
-  width: 25%;
+  width: 100%;
   /* padding-left: 30px; */
   margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.book__ratings1{
   color: #fabf2a;
 }
 
@@ -557,7 +566,15 @@ BOOKS PAGE
 
 .books__container{
   width: 100vw;
-  height: auto;
+  display: flex;
+  height: auto; 
+  padding: 24px 0;
+}
+
+.books__container1{
+  width: 100vw;
+  height: 100%; 
+  padding: 24px 0;
 }
 
 
@@ -640,18 +657,18 @@ select {
 .book__selected--description {
   width: 60%;
   padding: 16px 32px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
 }
 
 .book__selected--top {
+  width: 97%;
+  flex-direction: row;
   padding: 0 24px;
   margin-bottom: 8px;
   font-size: 32px;
   color: #242424;
-  display: flex;
-  align-items: center;
 }
 
 .book__selected--link {
@@ -672,10 +689,12 @@ select {
 }
 
 .book__selected--title {
+  display: flex;
   margin-bottom: 8px
 }
 
 .book__summary--title {
+  display: flex;
   margin-bottom: 8px;
 }
 
@@ -700,17 +719,29 @@ select {
 */
 
 .cart__header {
+  width: 100%;
   background-color: #7342d6;
   margin: 0 24px;
   padding: 8px 16px;
   color: white;
+  display: flex;
+  
+}
+
+.cart__body{
+  width: 100%;
+  display: flex;
+}
+
+.cart__title{
+  width: 100%;
   display: flex;
 }
 
 .cart__item {
   margin: 24px;
   display: flex;
-  padding-right: 8px;
+  padding-right: 24px;
 }
 
 .cart__title {
@@ -718,12 +749,23 @@ select {
 }
 
 .cart__book {
-  width: 60%;
+  width: 100%;
   display: flex;
 }
 
+.cart__book1 {
+  display: flex;
+}
+
+
 .cart__quantity {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cart__quantity1 {
+  width: 100%;
   display: flex;
   align-items: center;
 }
