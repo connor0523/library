@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -905,11 +905,45 @@ select {
 
 
 /* SMALL PHONES, LARGE SMARTPHONES */
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .btn__menu {
     display: block;
   }
 
+  
+  #landing{
+    overflow: hidden;
+  }
+  
+
+  .row{
+    width: 100%;
+  }
+
+  .row1{
+    width: 100%;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .highlight{
+    padding-right: 12px;
+  }
+
+  #features{
+    width: 100%;
+  }
+
+  .book{
+    width: 100%;
+  }
+
+  .book__img{
+    width: 100%;
+    height: 100%;
+  }
 
   .nav__list {
     display: none;
