@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LibraryLogo from '../assets/Library.svg'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Nav = ({ numberOfItems }) => {
+    useLocation()
+
+    useEffect(() => {
+        closeMenu()
+    }, [Nav])
+
     function openMenu() {
         document.body.classList += ' menu--open'
     }
@@ -48,17 +54,17 @@ const Nav = ({ numberOfItems }) => {
                 </button>
                 <ul className="menu__links">
                     <li className="menu__list">
-                        <Link to="/" className='menu__link'>
+                        <Link to="/" onClick={closeMenu} className='menu__link'>
                             Home
                         </Link>
                     </li>
                     <li className="menu__list">
-                        <Link to="/" className='menu__link'>
+                        <Link to="/books" onClick={closeMenu} className='menu__link'>
                             Books
                         </Link>
                     </li>
                     <li className="menu__list">
-                        <Link to="/" className='menu__link'>
+                        <Link to="/cart" onClick={closeMenu} className='menu__link'>
                             Cart
                         </Link>
                     </li>
