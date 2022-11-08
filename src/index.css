@@ -764,6 +764,8 @@ select {
 
 .cart__quantity--input{
   margin: 0;
+  padding: 8px;
+  font-size: 15px;
 }
 
 .cart__total {
@@ -923,11 +925,7 @@ select {
 
   
 
-  /* .book__ratings1{
-    margin: 0;
-    width: 100%;
-    transform: scale(.5);
-  } */
+  
 
   .book__selected {
     flex-direction: column;
